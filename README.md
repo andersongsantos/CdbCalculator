@@ -49,5 +49,15 @@ Antes de iniciar, certifique-se de que possui as seguintes versões instaladas:
    - Pressione `F5` para iniciar a aplicação com depuração.
    - Acompanhe a execução da API diretamente pelo Visual Studio.
 
+### 5. Execução dos Testes
+
+1. **Abra a solução no Visual Studio 2022**.
+2. **Acesse o Gerenciador de Testes**:
+   - Vá até **Test > Test Explorer** no menu superior.
+3. **Execute os testes**:
+   - Clique em **Run All** para rodar todos os testes.
+   - Ou selecione testes individuais e clique em **Run Selected**.
+4. **Verifique os resultados** na aba de Test Explorer.
+
 Se encontrar problemas durante a execução, verifique se todas as dependências foram instaladas corretamente e se o rebuild da solução foi realizado com sucesso.
 
