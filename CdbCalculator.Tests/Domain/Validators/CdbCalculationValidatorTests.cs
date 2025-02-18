@@ -1,5 +1,4 @@
 ﻿using CdbCalculator.Domain.Validators;
-using FluentValidation;
 
 namespace CdbCalculator.Tests.Domain.Validators;
 
