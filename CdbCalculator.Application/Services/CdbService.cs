@@ -2,7 +2,6 @@
 using CdbCalculator.Application.Services.Interfaces;
 using CdbCalculator.Application.Shared;
 using CdbCalculator.Domain.Validators;
-using FluentValidation;
 using Microsoft.Extensions.Logging;
 
 namespace CdbCalculator.Application.Services;
@@ -10,7 +9,7 @@ namespace CdbCalculator.Application.Services;
 public class CdbService(ICdbYieldCalculator cdbYieldCalculator, ILogger<CdbService> logger) : ICdbService
 {
     private readonly ICdbYieldCalculator _cdbYieldCalculator = cdbYieldCalculator;
-    private readonly IValidator<(decimal, int)> _validator = new CdbCalculationValidator();
+    private readonly CdbCalculationValidator _validator = new();
     private readonly ILogger<CdbService> _logger = logger;
 
     public Result<(decimal GrossYield, decimal NetYield)> CalculateYield(decimal initialValue, int months)

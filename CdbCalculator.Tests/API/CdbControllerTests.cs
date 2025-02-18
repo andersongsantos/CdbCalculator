@@ -25,7 +25,7 @@ public class CdbControllerTests
         // Arrange
         decimal initialValue = 1000m;
         int months = 12;
-        var result = Result<(decimal GrossYield, decimal NetYield)>.Failure(new List<string> { "Invalid data" });
+        var result = Result<(decimal GrossYield, decimal NetYield)>.Failure(["Invalid data"]);
 
         _mockCdbService.Setup(s => s.CalculateYield(initialValue, months)).Returns(result);
 
