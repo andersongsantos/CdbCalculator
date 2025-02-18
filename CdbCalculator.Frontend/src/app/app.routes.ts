@@ -1,4 +1,3 @@
-// app.routes.ts
 import { Routes } from '@angular/router';
 import { CdbComponent } from './cdb/cdb.component';
 
